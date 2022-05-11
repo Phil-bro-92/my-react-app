@@ -10,7 +10,7 @@ const AddTask = ({ onAdd }) => {
   const onSubmit = (e) => {
     e.preventDefault()
 
-    if(!text) {
+    if(!text, !day) {
       alert('Please Add Task & Time/Date');
       return
     }
